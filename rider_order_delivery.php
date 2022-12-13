@@ -147,7 +147,7 @@ $food_items = func_food_items();
 
                 <?php
     if (count($order_items) <= 0) {
-        echo '<h6 class="text-center p-4">ไม่มีข้อมูลสำหรับแสดงผล...</h6>';
+        echo '<h6 class="text-center p-4 border">ไม่มีข้อมูลสำหรับแสดงผล...</h6>';
     } else {
         for ($i = 0; $i < count($order_items); ++$i) {
             $row = $order_items[$i];
