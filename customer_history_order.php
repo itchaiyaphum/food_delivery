@@ -48,7 +48,7 @@ function func_food_items()
 $action = $app->input_lib->get_post('action', 'index');
 
 // เตรียมค่าที่ส่งเข้าไปที่ view
-$active_menu = 'cart';
+$active_menu = 'history_order';
 $order_items = func_order_items();
 $food_items = func_food_items();
 ?>
