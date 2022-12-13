@@ -11,7 +11,7 @@
         </a>
     </li>
     <li class="nav-item">
-        <a class="nav-link <?php echo ($active_menu == 'food_menus') ? 'active' : ''; ?>"
+        <a class="nav-link <?php echo ($active_menu == 'food_menu') ? 'active' : ''; ?>"
             href="/restaurant_food_menu.php">
             <i class="bi-justify"></i> รายการอาหาร
         </a>
