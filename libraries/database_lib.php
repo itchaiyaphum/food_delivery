@@ -119,7 +119,7 @@ class Database_lib extends Base_app
             exit('table / where ตั้งค่าไม่ครบถ้วน!');
         }
         // delete data to database
-        $sql = "DELETE FROM {$table_name} WHERE {$where}";
+        $sql = "DELETE FROM `{$table_name}` WHERE {$where}";
         if ($this->db->query($sql) === true) {
             return true;
         }
