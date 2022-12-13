@@ -5,7 +5,7 @@
         </a>
     </li>
     <li class="nav-item">
-        <a class="nav-link <?php echo ($active_menu == 'restaurants') ? 'active' : ''; ?>"
+        <a class="nav-link <?php echo ($active_menu == 'restaurant') ? 'active' : ''; ?>"
             href="/customer_restaurant.php">
             <i class="bi-box"></i> แสดงร้านอาหารทั้งหมด
         </a>
