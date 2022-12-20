@@ -9,7 +9,7 @@ function func_order_items($id = 0)
                 , u.restaurant_name as `restaurant_name` 
                 , u.thumbnail as `restaurant_thumbnail` 
                 FROM `order` as o
-                LEFT JOIN `user` as u ON(o.customer_id=u.id) WHERE {$where} ORDER BY o.created_at DESC";
+                LEFT JOIN `user` as u ON(o.restaurant_id=u.id) WHERE {$where} ORDER BY o.created_at DESC";
     $query = $app->database_lib->query($sql);
     $items = $query->result();
 

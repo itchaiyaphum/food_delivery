@@ -11,7 +11,9 @@ $action = $app->input_lib->get_post('action', 'index');
 
 // เตรียมค่าที่ส่งเข้าไปที่ view
 $active_menu = 'order_delivery';
-$customer_detail = $app->profile_lib->get_profile();
+
+$id = $app->input_lib->get_post('id', 0);
+$customer_detail = $app->profile_lib->get_profile_by_id($id);
 
 ?>
 
